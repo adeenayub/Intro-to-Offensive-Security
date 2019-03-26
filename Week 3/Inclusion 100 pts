@@ -1,7 +1,7 @@
 #This challenge had something to do with Local File inclusion. 
 #It basically asks us to reveal the source code of the file "flag.php". 
 
-#So I added "php://filter/convert.base64-encode/resource=flag.php" after the equal sign in the url and got an encoded text. 
+#So I added "php://filter/convert.base64-encode/resource=flag" after the equal sign in the url and got an encoded text. 
 #I decoded that using an online base 64 decoder and got the source code with the flag commented out. 
 #Here is the decoded version with the flag: 
 <?php
