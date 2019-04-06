@@ -1,1 +1,4 @@
-Check the pdf
+The pdf file contains the writeup
+rtm_remote contains the script for accessing the remote shell
+rtm_local contains the script for accessing the local shell
+return-to-mania is the binary file
